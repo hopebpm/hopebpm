@@ -611,7 +611,17 @@ button {
     overflow: hidden;
 
 }
+.release-cover {
 
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
 .artwork-placeholder {
 
     width: 100%;
