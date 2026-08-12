@@ -66,11 +66,7 @@ button {
        HOPE BPM BRAND FONT
 
        Eurostile Extended is the preferred brand font.
-       If the font is not installed/available, the browser
-       will automatically use the fallback fonts.
-
-       Later, if we have the properly licensed webfont file,
-       we can load it locally here.
+       If it is not installed, the browser uses the fallback.
     */
 
     --brand-font:
@@ -78,12 +74,11 @@ button {
         "Eurostile",
         "Space Grotesk",
         sans-serif;
-
 }
 
 
 /* =========================================================
-   HOPE BPM BRAND WORDMARK
+   BRAND WORDMARK
    ========================================================= */
 
 .brand-name {
@@ -95,7 +90,6 @@ button {
     letter-spacing: 0.02em;
 
     text-transform: uppercase;
-
 }
 
 
@@ -177,7 +171,6 @@ button {
             rgba(5,5,5,0.85),
             transparent
         );
-
 }
 
 
@@ -369,7 +362,9 @@ button {
 }
 
 
-/* HERO BRAND */
+/* =========================================================
+   HERO BRAND — HOPE BPM
+   ========================================================= */
 
 .hero h1 {
 
@@ -377,7 +372,7 @@ button {
 
     font-size: clamp(70px, 13vw, 180px);
 
-    line-height: 0.85;
+    line-height: 0.95;
 
     letter-spacing: 0.01em;
 
@@ -385,6 +380,15 @@ button {
 
     text-transform: uppercase;
 
+    /*
+       Slight vertical stretch.
+       Keeps the approved width while giving the
+       HOPE BPM wordmark a stronger, taller presence.
+    */
+
+    transform: scaleY(1.12);
+
+    transform-origin: center;
 }
 
 
@@ -1146,6 +1150,8 @@ button {
         font-size: clamp(65px, 18vw, 120px);
 
         letter-spacing: 0.01em;
+
+        transform: scaleY(1.08);
 
     }
 
