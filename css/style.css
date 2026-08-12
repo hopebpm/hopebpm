@@ -1,6 +1,11 @@
 /* =========================================================
    HOPE BPM — V1
-   Where Faith Breaks Reality
+   WHERE FAITH BREAKS REALITY
+   ========================================================= */
+
+
+/* =========================================================
+   FONTS
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
@@ -37,9 +42,13 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+}
+
 
 /* =========================================================
-   VARIABLES
+   BRAND
    ========================================================= */
 
 :root {
@@ -53,36 +62,87 @@ a {
 
     --spacing-section: clamp(100px, 12vw, 190px);
 
+    /*
+       HOPE BPM BRAND FONT
+
+       Eurostile Extended is the preferred brand font.
+       If the font is not installed/available, the browser
+       will automatically use the fallback fonts.
+
+       Later, if we have the properly licensed webfont file,
+       we can load it locally here.
+    */
+
+    --brand-font:
+        "Eurostile Extended",
+        "Eurostile",
+        "Space Grotesk",
+        sans-serif;
+
 }
 
 
 /* =========================================================
-   GLOBAL
+   HOPE BPM BRAND WORDMARK
+   ========================================================= */
+
+.brand-name {
+
+    font-family: var(--brand-font);
+
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   GLOBAL SECTIONS
    ========================================================= */
 
 .section {
+
     padding: var(--spacing-section) 24px;
+
 }
 
 .section-inner {
+
     width: min(100%, var(--max-width));
+
     margin: 0 auto;
+
 }
 
 .section-label {
+
     font-family: "Space Grotesk", sans-serif;
+
     font-size: 11px;
+
     letter-spacing: 0.25em;
+
     font-weight: 600;
+
     color: #777;
+
     margin-bottom: 45px;
+
 }
 
 .section-text {
+
     max-width: 520px;
+
     color: #999;
+
     font-size: 16px;
+
     line-height: 1.8;
+
 }
 
 
@@ -111,29 +171,40 @@ a {
 
     z-index: 1000;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(5,5,5,0.8),
-        transparent
-    );
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(5,5,5,0.85),
+            transparent
+        );
 
 }
 
+
+/* BRAND LOGO */
+
 .logo {
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--brand-font);
 
     font-size: 20px;
 
-    font-weight: 700;
+    font-weight: 600;
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
+
+    white-space: nowrap;
 
 }
 
 .logo span {
-    font-weight: 300;
+
+    font-weight: inherit;
+
 }
+
+
+/* MAIN NAV */
 
 .main-nav {
 
@@ -153,7 +224,9 @@ a {
 
     color: #888;
 
-    transition: color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
 
 }
 
@@ -170,6 +243,7 @@ a {
    ========================================================= */
 
 .menu-toggle {
+
     display: none;
 
     background: none;
@@ -177,6 +251,7 @@ a {
     border: none;
 
     cursor: pointer;
+
 }
 
 .menu-toggle span {
@@ -293,19 +368,27 @@ a {
 
 }
 
+
+/* HERO BRAND */
+
 .hero h1 {
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--brand-font);
 
     font-size: clamp(70px, 13vw, 180px);
 
     line-height: 0.85;
 
-    letter-spacing: -0.07em;
+    letter-spacing: 0.01em;
 
     font-weight: 600;
 
+    text-transform: uppercase;
+
 }
+
+
+/* TAGLINE */
 
 .tagline {
 
@@ -334,6 +417,9 @@ a {
     line-height: 1.7;
 
 }
+
+
+/* HERO BUTTONS */
 
 .hero-buttons {
 
@@ -368,13 +454,9 @@ a {
     letter-spacing: 0.18em;
 
     transition:
-
         background 0.3s ease,
-
         color 0.3s ease,
-
         border 0.3s ease,
-
         transform 0.3s ease;
 
 }
@@ -412,6 +494,9 @@ a {
     border-color: white;
 
 }
+
+
+/* HERO SCROLL */
 
 .hero-scroll {
 
@@ -957,13 +1042,13 @@ a {
 
 .footer-logo {
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--brand-font);
 
     font-weight: 600;
 
     font-size: 14px;
 
-    letter-spacing: 0.12em;
+    letter-spacing: 0.02em;
 
 }
 
@@ -1060,6 +1145,8 @@ a {
 
         font-size: clamp(65px, 18vw, 120px);
 
+        letter-spacing: 0.01em;
+
     }
 
     .tagline {
@@ -1122,6 +1209,26 @@ a {
 
         gap: 28px;
 
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
     }
 
 }
