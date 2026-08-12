@@ -1,6 +1,11 @@
 /* =========================================================
    HOPE BPM — V1
-   Where Faith Breaks Reality
+   WHERE FAITH BREAKS REALITY
+   ========================================================= */
+
+
+/* =========================================================
+   FONTS
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
@@ -37,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+}
+
 
 /* =========================================================
    VARIABLES
@@ -53,36 +62,71 @@ a {
 
     --spacing-section: clamp(100px, 12vw, 190px);
 
+    /* Universal web font */
+    --brand-font: "Space Grotesk", sans-serif;
 }
 
 
 /* =========================================================
-   GLOBAL
+   BRAND
+   ========================================================= */
+
+.brand-name {
+
+    font-family: var(--brand-font);
+
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   GLOBAL SECTIONS
    ========================================================= */
 
 .section {
+
     padding: var(--spacing-section) 24px;
+
 }
 
 .section-inner {
+
     width: min(100%, var(--max-width));
+
     margin: 0 auto;
+
 }
 
 .section-label {
+
     font-family: "Space Grotesk", sans-serif;
+
     font-size: 11px;
+
     letter-spacing: 0.25em;
+
     font-weight: 600;
+
     color: #777;
+
     margin-bottom: 45px;
+
 }
 
 .section-text {
+
     max-width: 520px;
+
     color: #999;
+
     font-size: 16px;
+
     line-height: 1.8;
+
 }
 
 
@@ -111,29 +155,33 @@ a {
 
     z-index: 1000;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(5,5,5,0.8),
-        transparent
-    );
-
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(5,5,5,0.85),
+            transparent
+        );
 }
+
+
+/* LOGO */
 
 .logo {
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--brand-font);
 
     font-size: 20px;
 
-    font-weight: 700;
+    font-weight: 600;
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
+
+    white-space: nowrap;
 
 }
 
-.logo span {
-    font-weight: 300;
-}
+
+/* NAVIGATION */
 
 .main-nav {
 
@@ -153,7 +201,9 @@ a {
 
     color: #888;
 
-    transition: color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
 
 }
 
@@ -170,6 +220,7 @@ a {
    ========================================================= */
 
 .menu-toggle {
+
     display: none;
 
     background: none;
@@ -177,6 +228,7 @@ a {
     border: none;
 
     cursor: pointer;
+
 }
 
 .menu-toggle span {
@@ -214,44 +266,41 @@ a {
 
     overflow: hidden;
 
-    background:
-
-        radial-gradient(
-            circle at 50% 45%,
-            rgba(255,255,255,0.07),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 50% 90%,
-            rgba(255,255,255,0.04),
-            transparent 40%
-        ),
-
-        #050505;
+    background: #050505;
 
 }
 
-.hero::before {
 
-    content: "";
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.hero-visual {
 
     position: absolute;
 
-    inset: 0;
+    top: 0;
+    left: 0;
 
-    background:
+    width: 100%;
+    height: 100%;
 
-        radial-gradient(
-            ellipse at center,
-            transparent 20%,
-            rgba(0,0,0,0.8) 75%,
-            #050505 100%
-        );
+    object-fit: cover;
+
+    object-position: left center;
+
+    z-index: 0;
+
+    opacity: 0.95;
 
     pointer-events: none;
 
 }
+
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
 
 .hero-background {
 
@@ -259,23 +308,39 @@ a {
 
     inset: 0;
 
+    z-index: 1;
+
     background:
 
+        linear-gradient(
+            90deg,
+            rgba(5,5,5,0.05) 0%,
+            rgba(5,5,5,0.15) 35%,
+            rgba(5,5,5,0.82) 68%,
+            rgba(5,5,5,0.98) 100%
+        ),
+
         radial-gradient(
-            ellipse at 50% 35%,
-            rgba(255,255,255,0.05),
-            transparent 35%
+            ellipse at center,
+            transparent 20%,
+            rgba(0,0,0,0.75) 75%,
+            #050505 100%
         );
 
-    filter: blur(30px);
+    pointer-events: none;
 
 }
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
 
 .hero-content {
 
     position: relative;
 
-    z-index: 2;
+    z-index: 3;
 
     padding: 120px 20px 80px;
 
@@ -293,19 +358,31 @@ a {
 
 }
 
+
+/* =========================================================
+   HERO WORDMARK
+   ========================================================= */
+
 .hero h1 {
 
     font-family: "Space Grotesk", sans-serif;
 
     font-size: clamp(70px, 13vw, 180px);
 
-    line-height: 0.85;
+    line-height: 0.95;
 
-    letter-spacing: -0.07em;
+    letter-spacing: 0.01em;
 
     font-weight: 600;
 
+    text-transform: uppercase;
+
 }
+
+
+/* =========================================================
+   HERO TAGLINE
+   ========================================================= */
 
 .tagline {
 
@@ -334,6 +411,11 @@ a {
     line-height: 1.7;
 
 }
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
 
 .hero-buttons {
 
@@ -368,13 +450,9 @@ a {
     letter-spacing: 0.18em;
 
     transition:
-
         background 0.3s ease,
-
         color 0.3s ease,
-
         border 0.3s ease,
-
         transform 0.3s ease;
 
 }
@@ -413,6 +491,11 @@ a {
 
 }
 
+
+/* =========================================================
+   HERO SCROLL
+   ========================================================= */
+
 .hero-scroll {
 
     position: absolute;
@@ -428,6 +511,8 @@ a {
     letter-spacing: 0.3em;
 
     color: #555;
+
+    z-index: 4;
 
 }
 
@@ -957,13 +1042,13 @@ a {
 
 .footer-logo {
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--brand-font);
 
     font-weight: 600;
 
     font-size: 14px;
 
-    letter-spacing: 0.12em;
+    letter-spacing: 0.02em;
 
 }
 
@@ -1056,9 +1141,39 @@ a {
 
     }
 
+    .hero {
+
+        min-height: 100svh;
+
+    }
+
+    .hero-visual {
+
+        object-position: 20% center;
+
+        opacity: 0.55;
+
+    }
+
+    .hero-background {
+
+        background:
+
+            linear-gradient(
+                180deg,
+                rgba(5,5,5,0.25) 0%,
+                rgba(5,5,5,0.65) 45%,
+                rgba(5,5,5,0.96) 82%,
+                #050505 100%
+            );
+
+    }
+
     .hero h1 {
 
         font-size: clamp(65px, 18vw, 120px);
+
+        letter-spacing: 0.01em;
 
     }
 
@@ -1122,6 +1237,26 @@ a {
 
         gap: 28px;
 
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
     }
 
 }
