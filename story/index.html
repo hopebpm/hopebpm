@@ -399,58 +399,101 @@
 
     <div class="section-inner">
 
-        <div class="vehicle-grid">
-
+        <div
+            class="vehicle-grid"
+            style="
+                display:grid;
+                grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+                column-gap:70px;
+                align-items:start;
+            "
+        >
 
             <!-- ==================================================
-                 LEFT — TITLE
+                 LEFT COLUMN — TITLE + IMAGE
             ================================================== -->
 
-            <div class="vehicle-title">
+            <div
+                style="
+                    grid-column:1;
+                    grid-row:1;
+                    min-width:0;
+                "
+            >
 
-                <p class="section-label story-section-heading">
-                    THE VEHICLE
-                </p>
+                <div class="vehicle-title">
 
-                <h2>
-                    ELECTRONIC<br>
-                    MUSIC.
-                </h2>
+                    <p class="section-label story-section-heading">
+                        THE VEHICLE
+                    </p>
+
+                    <h2>
+                        ELECTRONIC<br>
+                        MUSIC.
+                    </h2>
+
+                </div>
+
+
+                <!-- ==================================================
+                     VISUAL EXPERIENCE
+                ================================================== -->
+
+                <section
+                    class="story-visual-section"
+                    style="
+                        margin-top:0;
+                        margin-bottom:0;
+                        padding:0;
+                    "
+                >
+
+                    <div
+                        class="story-visual-wrap"
+                        style="
+                            margin:0;
+                            padding:0;
+                            width:100%;
+                        "
+                    >
+
+                        <img
+                            src="../assets/where-faith-breaks-reality.webp"
+                            alt="HOPE BPM — Where Faith Breaks Reality"
+                            loading="lazy"
+                            style="
+                                display:block;
+                                width:100%;
+                                height:auto;
+                                margin:0;
+                            "
+                        >
+
+                    </div>
+
+                </section>
 
             </div>
 
 
             <!-- ==================================================
-                 LEFT — VISUAL EXPERIENCE
+                 RIGHT COLUMN — COPY
             ================================================== -->
 
-            <section
-                class="story-visual-section"
-                style="margin-top:0; margin-bottom:-45px;"
+            <div
+                class="vehicle-copy"
+                style="
+                    grid-column:2;
+                    grid-row:1;
+                    min-width:0;
+                    margin:0;
+                    padding:0;
+                "
             >
-
-                <div class="story-visual-wrap">
-
-                    <img
-                        src="../assets/where-faith-breaks-reality.webp"
-                        alt="HOPE BPM — Where Faith Breaks Reality"
-                        loading="lazy"
-                    >
-
-                </div>
-
-            </section>
-
-
-            <!-- ==================================================
-                 RIGHT — COPY
-            ================================================== -->
-
-            <div class="vehicle-copy">
 
                 <p
                     class="story-why-text story-reality-style"
-                    style="margin-bottom:20px;"
+                    style="margin-top:0; margin-bottom:20px;"
                 >
                     Music and visual art become the vehicle.
                 </p>
@@ -488,7 +531,6 @@
                 </p>
 
             </div>
-
 
         </div>
 
