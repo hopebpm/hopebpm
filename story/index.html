@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -207,7 +206,7 @@
 
                 <div class="story-change-copy">
 
-                    <p class="story-large-text story-smaller-text">
+                    <p class="story-large-text story-reason">
 
                         Years of DJing and exposure to high
                         volumes eventually changed the way I
@@ -225,7 +224,7 @@
                     </p>
 
 
-                    <p class="story-highlight story-smaller-text">
+                    <p class="story-highlight story-reason">
 
                         But Jesus gave me the strength
                         to keep going.
@@ -233,7 +232,7 @@
                     </p>
 
 
-                    <p class="section-text story-secondary story-larger-text">
+                    <p class="section-text story-larger-text story-secondary">
 
                         And something else changed.
 
@@ -287,14 +286,14 @@
                 </p>
 
 
-                <p class="story-faith-body">
+                <p class="story-faith-body story-larger-text">
 
                     What changed wasn’t only the way I heard music.
 
                 </p>
 
 
-                <p class="story-faith-body">
+                <p class="story-faith-body story-larger-text">
 
                     It was beginning to understand why I was
                     being prepared and what the music was
@@ -387,7 +386,7 @@
             </p>
 
 
-            <p class="story-why-text">
+            <p class="story-why-text story-reality-style">
 
                 That’s the kind of music I want to make.
 
@@ -432,21 +431,21 @@
                     </p>
 
 
-                    <p class="vehicle-line">
+                    <p class="vehicle-line vehicle-reality">
 
                         Reality can bend.
 
                     </p>
 
 
-                    <p class="vehicle-line">
+                    <p class="vehicle-line vehicle-faith">
 
                         Faith can make the impossible possible.
 
                     </p>
 
 
-                    <p class="section-text">
+                    <p class="section-text vehicle-message-text">
 
                         It’s not about the cinematic image.
 
@@ -460,7 +459,7 @@
                     </p>
 
 
-                    <p class="section-text">
+                    <p class="section-text vehicle-message-text">
 
                         The vehicle has a purpose when it reaches
                         people in a new way — with the same message.
@@ -663,10 +662,6 @@
 }
 
 
-/* ==================================================
-   STORY TEXT SIZE ADJUSTMENTS
-================================================== */
-
 .story-change-copy {
     padding-top:25px;
 }
@@ -680,19 +675,99 @@
 }
 
 
-/* Smaller text requested */
+/* ==================================================
+   TEXT FORMAT MATCHES
+================================================== */
 
-.story-smaller-text {
-    font-size:clamp(22px,2.8vw,36px);
+/*
+   Years...
+   Same format as:
+   Not just the way I heard music.
+*/
+
+.story-reason {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(25px,3.3vw,43px);
+    line-height:1.16;
+    letter-spacing:-.035em;
 }
 
 
-/* Larger text requested */
+/*
+   For someone...
+   And something else changed.
+   Same format as:
+   What changed wasn’t only the way I heard music.
+*/
 
 .story-larger-text {
+    font-family:'Space Grotesk',sans-serif;
     font-size:clamp(29px,3.8vw,48px);
+    line-height:1.15;
+    letter-spacing:-.035em;
 }
 
+
+/*
+   That's the kind of music...
+   Same format as:
+   Reality can bend.
+*/
+
+.story-reality-style {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(28px,4vw,52px);
+    line-height:1;
+    letter-spacing:-.04em;
+}
+
+
+/*
+   Faith can make...
+   Same format as:
+   Together, they can give...
+*/
+
+.vehicle-faith {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(28px,4vw,50px);
+    line-height:1.08;
+    letter-spacing:-.04em;
+}
+
+
+/*
+   Reality can bend.
+   Same format as:
+   Music and visual art become the vehicle.
+*/
+
+.vehicle-reality {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(25px,3.3vw,43px);
+    line-height:1.16;
+    letter-spacing:-.035em;
+}
+
+
+/*
+   It's not about...
+   The vehicle has...
+   Same format as:
+   What changed wasn't...
+*/
+
+.vehicle-message-text {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(29px,3.8vw,48px);
+    line-height:1.15;
+    letter-spacing:-.035em;
+}
+
+
+/* ==================================================
+   STORY CHANGE SPACING
+================================================== */
 
 .story-change-copy .section-text {
     margin-top:25px;
@@ -880,17 +955,12 @@
 
 
 .vehicle-line {
-    font-family:'Space Grotesk',sans-serif;
-    font-size:clamp(28px,4vw,52px);
-    line-height:1;
-    letter-spacing:-.04em;
     margin-top:45px;
 }
 
 
 .vehicle-line + .vehicle-line {
     margin-top:20px;
-    color:#777;
 }
 
 
@@ -1175,4 +1245,3 @@
 </body>
 
 </html>
-```
