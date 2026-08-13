@@ -206,10 +206,7 @@
 
                 <div class="story-change-copy">
 
-
-                    <!-- Smaller narrative text -->
-
-                    <p class="story-small-text">
+                    <p class="story-why-text">
 
                         Years of DJing and exposure to high
                         volumes eventually changed the way I
@@ -218,9 +215,7 @@
                     </p>
 
 
-                    <!-- Main narrative style -->
-
-                    <p class="story-reality-style">
+                    <p class="story-why-text story-reality-style">
 
                         For someone who had spent so much of life
                         around music, it could have been the end
@@ -229,9 +224,7 @@
                     </p>
 
 
-                    <!-- Highlight -->
-
-                    <p class="story-highlight">
+                    <p class="story-highlight story-reason">
 
                         But Jesus gave me the strength
                         to keep going.
@@ -239,32 +232,25 @@
                     </p>
 
 
-                    <!-- Main narrative style -->
+                    <p class="story-why-text story-reality-style">
 
-                    <p class="story-reality-style story-secondary">
-
-                        And something else changed.
+                        And something else changed...
 
                     </p>
 
 
-                    <!-- Main narrative style -->
-
-                    <p class="story-reality-style story-reason">
+                    <p class="story-why-text story-reality-style"">
 
                         Not just the way I heard music.
 
                     </p>
 
 
-                    <!-- Smaller narrative text -->
-
-                    <p class="story-small-text story-reason">
+                    <p class="story-why-text">
 
                         The reason I made music.
 
                     </p>
-
 
                 </div>
 
@@ -400,7 +386,7 @@
             </p>
 
 
-            <p class="story-reality-style">
+            <p class="story-why-text story-reality-style">
 
                 That’s the kind of music I want to make.
 
@@ -438,37 +424,28 @@
 
                 <div class="vehicle-copy">
 
-
-                    <!-- Main narrative style -->
-
-                    <p class="story-reality-style">
+                    <p class="story-why-text story-reality-style">
 
                         Music and visual art become the vehicle.
 
                     </p>
 
 
-                    <!-- Same visual level -->
-
-                    <p class="story-reality-style vehicle-reality">
+                    <p class="story-why-text story-reality-style">
 
                         Reality can bend.
 
                     </p>
 
 
-                    <!-- Intermediate style -->
-
-                    <p class="vehicle-faith">
+                    <p class="vehicle-line vehicle-faith">
 
                         Faith can make the impossible possible.
 
                     </p>
 
 
-                    <!-- Main narrative style -->
-
-                    <p class="story-reality-style vehicle-message">
+                    <p class="story-large-text">
 
                         It’s not about the cinematic image.
 
@@ -482,15 +459,12 @@
                     </p>
 
 
-                    <!-- Main narrative style -->
-
-                    <p class="story-reality-style vehicle-message">
+                    <p class="story-why-text story-reality-style">
 
                         The vehicle has a purpose when it reaches
                         people in a new way — with the same message.
 
                     </p>
-
 
                 </div>
 
@@ -693,26 +667,34 @@
 }
 
 
-/* ==================================================
-   SMALLER NARRATIVE TEXT
-================================================== */
-
-.story-small-text {
-    max-width:750px;
+.story-large-text {
     font-family:'Space Grotesk',sans-serif;
-    font-size:clamp(25px,3.5vw,45px);
-    line-height:1.15;
+    font-size:clamp(25px,3.3vw,43px);
+    line-height:1.16;
     letter-spacing:-.035em;
 }
 
 
 /* ==================================================
-   MAIN NARRATIVE STYLE
-   SAME FORMAT THROUGHOUT THE STORY
+   YEARS / NOT JUST
 ================================================== */
 
-.story-reality-style {
-    max-width:750px;
+.story-reason {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(25px,3.3vw,43px);
+    line-height:1.16;
+    letter-spacing:-.035em;
+}
+
+
+/* ==================================================
+   SAME FORMAT AS:
+   THAT'S THE KIND OF MUSIC I WANT TO MAKE
+================================================== */
+
+.story-reality-style,
+.story-why-text-style,
+.vehicle-message-text {
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(28px,4vw,52px);
     line-height:1;
@@ -721,17 +703,13 @@
 
 
 /* ==================================================
-   STORY REASON
+   STORY CHANGE SPACING
 ================================================== */
 
-.story-reason {
+.story-change-copy .section-text {
     margin-top:25px;
 }
 
-
-/* ==================================================
-   STORY HIGHLIGHT
-================================================== */
 
 .story-highlight {
     margin-top:45px;
@@ -742,12 +720,13 @@
 }
 
 
-/* ==================================================
-   STORY SECONDARY
-================================================== */
-
 .story-secondary {
     margin-top:50px;
+}
+
+
+.story-reason {
+    margin-top:25px;
 }
 
 
@@ -796,12 +775,6 @@
     font-size:clamp(19px,2vw,25px);
     line-height:1.5;
     color:#999;
-}
-
-
-.story-larger-text {
-    font-size:clamp(22px,2.8vw,32px);
-    line-height:1.4;
 }
 
 
@@ -918,30 +891,41 @@
 }
 
 
-.vehicle-reality {
+.vehicle-line {
     margin-top:45px;
 }
 
 
+.vehicle-line + .vehicle-line {
+    margin-top:20px;
+}
+
+
 /* ==================================================
-   FAITH CAN MAKE
+   REALITY CAN BEND
+   Same format as:
+   MUSIC AND VISUAL ART BECOME THE VEHICLE
+================================================== */
+
+.vehicle-reality {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(25px,3.3vw,43px);
+    line-height:1.16;
+    letter-spacing:-.035em;
+}
+
+
+/* ==================================================
+   FAITH CAN MAKE...
+   Same format as:
+   TOGETHER, THEY CAN GIVE...
 ================================================== */
 
 .vehicle-faith {
-    margin-top:25px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(28px,4vw,50px);
     line-height:1.08;
     letter-spacing:-.04em;
-}
-
-
-/* ==================================================
-   VEHICLE MESSAGE
-================================================== */
-
-.vehicle-message {
-    margin-top:45px;
 }
 
 
@@ -1086,17 +1070,6 @@
     }
 
 
-    .story-reality-style {
-        font-size:clamp(25px,5.5vw,38px);
-        line-height:1.08;
-    }
-
-
-    .story-small-text {
-        font-size:clamp(23px,5vw,35px);
-    }
-
-
     .story-faith {
         padding-top:55px;
         padding-bottom:60px;
@@ -1174,18 +1147,13 @@
     }
 
 
-    .vehicle-reality {
+    .vehicle-line {
         margin-top:35px;
     }
 
 
-    .vehicle-faith {
-        margin-top:25px;
-    }
-
-
-    .vehicle-message {
-        margin-top:35px;
+    .vehicle-copy .section-text {
+        margin-top:40px;
     }
 
 
