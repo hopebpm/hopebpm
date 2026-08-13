@@ -132,7 +132,7 @@
          PAGE HERO
     ================================================== -->
 
-    <section class="section">
+    <section class="section music-hero">
 
         <div class="section-inner">
 
@@ -171,7 +171,7 @@
          RELEASE 01 — ONLY YOU
     ================================================== -->
 
-    <section class="release-section section release-compact">
+    <section class="release-section section release-one">
 
         <div class="section-inner">
 
@@ -291,7 +291,7 @@
          RELEASE 02 — JERICHO FALL
     ================================================== -->
 
-    <section class="release-section section release-compact">
+    <section class="release-section section release-two">
 
         <div class="section-inner">
 
@@ -411,7 +411,7 @@
          CLOSING CTA
     ================================================== -->
 
-    <section class="connect-section section">
+    <section class="connect-section section keep-listening">
 
         <div class="section-inner connect-inner">
 
@@ -473,38 +473,86 @@
 
 
 <!-- ==================================================
-     RELEASE SPACING
+     MUSIC PAGE SPACING
 ================================================== -->
 
 <style>
 
     /*
-       Tighter spacing between releases.
-       The first release keeps normal breathing room.
-       The second release starts much closer.
+       HERO → FIRST RELEASE
+
+       Brings ONLY YOU closer to
+       "The vehicle changes."
     */
 
-    .release-compact {
-        padding-top: 70px;
-        padding-bottom: 70px;
+    .music-hero {
+        padding-bottom: 35px;
     }
 
 
-    .release-compact + .release-compact {
-        padding-top: 20px;
+    /*
+       FIRST RELEASE
+
+       Keeps the release breathing room
+       without creating excessive empty space.
+    */
+
+    .release-one {
+        padding-top: 35px;
+        padding-bottom: 30px;
     }
 
+
+    /*
+       BETWEEN RELEASE 01 AND RELEASE 02
+
+       Slightly more breathing room than
+       the previous version.
+    */
+
+    .release-two {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+
+    /*
+       RELEASE 02 → KEEP LISTENING
+
+       Pulls the closing section much closer
+       to the second release.
+    */
+
+    .keep-listening {
+        padding-top: 35px;
+    }
+
+
+    /*
+       MOBILE
+    */
 
     @media (max-width: 768px) {
 
-        .release-compact {
-            padding-top: 50px;
-            padding-bottom: 50px;
+        .music-hero {
+            padding-bottom: 25px;
         }
 
 
-        .release-compact + .release-compact {
-            padding-top: 10px;
+        .release-one {
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+
+
+        .release-two {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+
+        .keep-listening {
+            padding-top: 25px;
         }
 
     }
@@ -517,4 +565,3 @@
 </body>
 
 </html>
-
