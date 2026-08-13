@@ -391,7 +391,7 @@
     </section>
 
 
- <!-- ==================================================
+<!-- ==================================================
      THE VEHICLE
 ================================================== -->
 
@@ -399,10 +399,22 @@
 
     <div class="section-inner">
 
-        <div class="vehicle-grid">
+        <div
+            class="vehicle-grid"
+            style="
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:clamp(50px,8vw,120px);
+                align-items:start;
+            "
+        >
 
+            <!-- LEFT SIDE -->
 
-            <div class="vehicle-title">
+            <div
+                class="vehicle-title"
+                style="min-width:0;"
+            >
 
                 <p class="section-label story-section-heading">
                     THE VEHICLE
@@ -413,15 +425,59 @@
                     MUSIC.
                 </h2>
 
+
+                <div
+                    class="story-visual-section"
+                    style="
+                        width:100%;
+                        padding:0;
+                        margin-top:55px;
+                        margin-bottom:0;
+                    "
+                >
+
+                    <div
+                        class="story-visual-wrap"
+                        style="
+                            width:100%;
+                            margin:0;
+                        "
+                    >
+
+                        <img
+                            src="../assets/where-faith-breaks-reality.webp"
+                            alt="HOPE BPM — Where Faith Breaks Reality"
+                            loading="lazy"
+                            style="
+                                display:block;
+                                width:100%;
+                                height:auto;
+                            "
+                        >
+
+                    </div>
+
+                </div>
+
             </div>
 
 
-            <div class="vehicle-copy">
+            <!-- RIGHT SIDE -->
 
+            <div
+                class="vehicle-copy"
+                style="
+                    padding-top:25px;
+                    min-width:0;
+                "
+            >
 
                 <p
                     class="story-why-text story-reality-style"
-                    style="margin-bottom:20px;"
+                    style="
+                        margin-top:0;
+                        margin-bottom:0;
+                    "
                 >
 
                     Music and visual art become the vehicle.
@@ -429,31 +485,13 @@
                 </p>
 
 
-                <!-- ==================================================
-                     VISUAL EXPERIENCE
-                ================================================== -->
-
-                <section
-                    class="story-visual-section"
-                    style="margin-top:0; margin-bottom:-45px;"
-                >
-
-                    <div class="story-visual-wrap">
-
-                        <img
-                            src="../assets/where-faith-breaks-reality.webp"
-                            alt="HOPE BPM — Where Faith Breaks Reality"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                </section>
-
-
                 <p
                     class="story-why-text story-reality-style"
-                    style="color:#777; margin-top:0;"
+                    style="
+                        margin-top:80px;
+                        margin-bottom:0;
+                        color:#777;
+                    "
                 >
 
                     Reality can bend.
@@ -461,21 +499,39 @@
                 </p>
 
 
-                <p class="vehicle-line vehicle-faith">
+                <p
+                    class="vehicle-line vehicle-faith"
+                    style="
+                        margin-top:30px;
+                        margin-bottom:0;
+                    "
+                >
 
                     Faith can make the impossible possible.
 
                 </p>
 
 
-                <p class="story-large-text">
+                <p
+                    class="story-large-text"
+                    style="
+                        margin-top:65px;
+                        margin-bottom:0;
+                    "
+                >
 
                     It’s not about the cinematic image.
 
                 </p>
 
 
-                <p class="story-large-text">
+                <p
+                    class="story-large-text"
+                    style="
+                        margin-top:20px;
+                        margin-bottom:0;
+                    "
+                >
 
                     It’s about the message behind it.
 
@@ -484,7 +540,11 @@
 
                 <p
                     class="story-why-text story-reality-style"
-                    style="color:#777;"
+                    style="
+                        margin-top:60px;
+                        margin-bottom:0;
+                        color:#777;
+                    "
                 >
 
                     The vehicle has a purpose when it reaches
@@ -492,9 +552,7 @@
 
                 </p>
 
-
             </div>
-
 
         </div>
 
