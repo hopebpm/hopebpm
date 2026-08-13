@@ -1,492 +1,1286 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================================
+   HOPE BPM — V1
+   WHERE FAITH BREAKS REALITY
+   ========================================================= */
 
-<head>
 
-    <meta charset="UTF-8">
+/* =========================================================
+   FONTS
+   ========================================================= */
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-    <title>Connect | HOPE BPM — Official Artist Hub</title>
 
-    <meta
-        name="description"
-        content="Connect with HOPE BPM — official YouTube, Spotify, TikTok and Instagram. Follow the journey of Christian electronic music and worship."
-    >
+/* =========================================================
+   RESET
+   ========================================================= */
 
-    <meta
-        name="robots"
-        content="index, follow"
-    >
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <meta
-        property="og:title"
-        content="Connect | HOPE BPM"
-    >
+html {
+    scroll-behavior: smooth;
+}
 
-    <meta
-        property="og:description"
-        content="The official HOPE BPM artist hub — YouTube, Spotify, TikTok and Instagram."
-    >
+body {
+    background: #050505;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
 
-    <meta
-        property="og:type"
-        content="website"
-    >
+img {
+    max-width: 100%;
+    display: block;
+}
 
-    <meta
-        property="og:url"
-        content="https://hopebpm.pages.dev/connect/"
-    >
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-    <meta
-        name="twitter:card"
-        content="summary_large_image"
-    >
+button {
+    font-family: inherit;
+}
 
-    <meta
-        name="twitter:title"
-        content="Connect | HOPE BPM"
-    >
 
-    <meta
-        name="twitter:description"
-        content="Follow HOPE BPM across the official platforms."
-    >
+/* =========================================================
+   VARIABLES
+   ========================================================= */
 
-    <link
-        rel="stylesheet"
-        href="../css/style.css"
-    >
+:root {
 
-</head>
+    --black: #050505;
+    --white: #ffffff;
+    --gray: #9a9a9a;
+    --dark-gray: #151515;
 
+    --max-width: 1280px;
 
-<body>
+    --spacing-section: clamp(100px, 12vw, 190px);
 
+    /* Universal web font */
+    --brand-font: "Space Grotesk", sans-serif;
+}
 
-<header class="site-header">
 
-    <a
-        href="/"
-        class="logo"
-    >
-        HOPE BPM
-    </a>
+/* =========================================================
+   BRAND
+   ========================================================= */
 
+.brand-name {
 
-    <button
-        class="menu-toggle"
-        aria-label="Open navigation"
-        aria-expanded="false"
-    >
+    font-family: var(--brand-font);
 
-        <span></span>
-        <span></span>
+    font-weight: 600;
 
-    </button>
+    letter-spacing: 0.02em;
 
+    text-transform: uppercase;
+}
 
-    <nav class="main-nav">
 
-        <a href="/">
-            HOME
-        </a>
+/* =========================================================
+   GLOBAL SECTIONS
+   ========================================================= */
 
-        <a href="/music/">
-            MUSIC
-        </a>
+.section {
 
-        <a href="/story/">
-            STORY
-        </a>
+    padding: var(--spacing-section) 24px;
 
-        <a href="/videos/">
-            VIDEOS
-        </a>
+}
 
-        <a
-            href="/connect/"
-            class="active"
-        >
-            CONNECT
-        </a>
+.section-inner {
 
-    </nav>
+    width: min(100%, var(--max-width));
 
-</header>
+    margin: 0 auto;
 
+}
 
-<main>
+.section-label {
 
+    font-family: "Space Grotesk", sans-serif;
 
-    <!-- HERO -->
+    font-size: 11px;
 
-    <section class="section">
+    letter-spacing: 0.25em;
 
-        <div class="section-inner">
+    font-weight: 600;
 
-            <p class="section-label">
-                OFFICIAL HOPE BPM HUB
-            </p>
+    color: #777;
 
-            <h1
-                style="
-                    font-family:'Space Grotesk',sans-serif;
-                    font-size:clamp(65px,12vw,170px);
-                    line-height:.85;
-                    letter-spacing:-.07em;
-                    font-weight:500;
-                "
-            >
-                FOLLOW<br>
-                THE<br>
-                JOURNEY.
-            </h1>
+    margin-bottom: 45px;
 
-            <p
-                class="section-text"
-                style="margin-top:50px; margin-bottom:-20px;"
-            >
-
-                Music, visuals and everything happening
-                inside the HOPE BPM world.
+}
 
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- SOCIAL HUB -->
-
-    <section class="connect-section section">
-
-        <div class="section-inner">
-
-            <p class="section-label">
-                OFFICIAL PLATFORMS
-            </p>
-
-
-            <div
-                style="
-                    border-top:1px solid #222;
-                    text-align:left;
-                "
-            >
-
-
-                <!-- YOUTUBE -->
-
-                <a
-                    href="https://www.youtube.com/@HOPEBPM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="
-                        display:flex;
-                        align-items:center;
-                        justify-content:space-between;
-                        padding:35px 0;
-                        border-bottom:1px solid #222;
-                    "
-                >
-
-                    <div>
-
-                        <h2
-                            style="
-                                font-family:'Space Grotesk',sans-serif;
-                                font-size:clamp(35px,6vw,80px);
-                                line-height:.9;
-                                letter-spacing:-.06em;
-                                font-weight:500;
-                            "
-                        >
-                            YOUTUBE
-                        </h2>
-
-                        <p
-                            style="
-                                color:#666;
-                                margin-top:10px;
-                                font-size:11px;
-                                letter-spacing:.16em;
-                            "
-                        >
-                            OFFICIAL VIDEOS
-                        </p>
-
-                    </div>
-
-                    <span
-                        style="
-                            font-size:28px;
-                            color:#555;
-                        "
-                    >
-                        →
-                    </span>
-
-                </a>
-
-
-                <!-- SPOTIFY -->
-
-                <a
-                    href="https://open.spotify.com/artist/2x2V0sMJoxNYOZyzeQEmHp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="
-                        display:flex;
-                        align-items:center;
-                        justify-content:space-between;
-                        padding:35px 0;
-                        border-bottom:1px solid #222;
-                    "
-                >
-
-                    <div>
-
-                        <h2
-                            style="
-                                font-family:'Space Grotesk',sans-serif;
-                                font-size:clamp(35px,6vw,80px);
-                                line-height:.9;
-                                letter-spacing:-.06em;
-                                font-weight:500;
-                            "
-                        >
-                            SPOTIFY
-                        </h2>
-
-                        <p
-                            style="
-                                color:#666;
-                                margin-top:10px;
-                                font-size:11px;
-                                letter-spacing:.16em;
-                            "
-                        >
-                            LISTEN TO THE MUSIC
-                        </p>
-
-                    </div>
-
-                    <span
-                        style="
-                            font-size:28px;
-                            color:#555;
-                        "
-                    >
-                        →
-                    </span>
-
-                </a>
-
-
-                <!-- TIKTOK -->
-
-                <a
-                    href="https://www.tiktok.com/@hopebpm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="
-                        display:flex;
-                        align-items:center;
-                        justify-content:space-between;
-                        padding:35px 0;
-                        border-bottom:1px solid #222;
-                    "
-                >
-
-                    <div>
-
-                        <h2
-                            style="
-                                font-family:'Space Grotesk',sans-serif;
-                                font-size:clamp(35px,6vw,80px);
-                                line-height:.9;
-                                letter-spacing:-.06em;
-                                font-weight:500;
-                            "
-                        >
-                            TIKTOK
-                        </h2>
-
-                        <p
-                            style="
-                                color:#666;
-                                margin-top:10px;
-                                font-size:11px;
-                                letter-spacing:.16em;
-                            "
-                        >
-                            SHORT FORM / BEHIND THE SCENES
-                        </p>
-
-                    </div>
-
-                    <span
-                        style="
-                            font-size:28px;
-                            color:#555;
-                        "
-                    >
-                        →
-                    </span>
-
-                </a>
-
-
-                <!-- INSTAGRAM -->
-
-                <a
-                    href="https://www.instagram.com/hopebpm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="
-                        display:flex;
-                        align-items:center;
-                        justify-content:space-between;
-                        padding:35px 0;
-                        border-bottom:1px solid #222;
-                    "
-                >
-
-                    <div>
-
-                        <h2
-                            style="
-                                font-family:'Space Grotesk',sans-serif;
-                                font-size:clamp(35px,6vw,80px);
-                                line-height:.9;
-                                letter-spacing:-.06em;
-                                font-weight:500;
-                            "
-                        >
-                            INSTAGRAM
-                        </h2>
-
-                        <p
-                            style="
-                                color:#666;
-                                margin-top:10px;
-                                font-size:11px;
-                                letter-spacing:.16em;
-                            "
-                        >
-                            VISUALS / DAILY WORLD
-                        </p>
-
-                    </div>
-
-                    <span
-                        style="
-                            font-size:28px;
-                            color:#555;
-                        "
-                    >
-                        →
-                    </span>
-
-                </a>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FUTURE -->
-
-    <section class="section">
-
-        <div class="section-inner">
-
-            <p class="section-label">
-                COMING LATER
-            </p>
-
-            <div
-                style="
-                    display:flex;
-                    flex-wrap:wrap;
-                    gap:12px;
-                "
-            >
-
-                <span
-                    style="
-                        border:1px solid #222;
-                        padding:14px 18px;
-                        color:#555;
-                        font-size:10px;
-                        letter-spacing:.18em;
-                    "
-                >
-                    MUSICBRAINZ
-                </span>
-
-                <span
-                    style="
-                        border:1px solid #222;
-                        padding:14px 18px;
-                        color:#555;
-                        font-size:10px;
-                        letter-spacing:.18em;
-                    "
-                >
-                    DISCOGS
-                </span>
-
-                <span
-                    style="
-                        border:1px solid #222;
-                        padding:14px 18px;
-                        color:#555;
-                        font-size:10px;
-                        letter-spacing:.18em;
-                    "
-                >
-                    WIKIDATA
-                </span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-</main>
-
-
-<footer class="site-footer">
-
-    <div class="footer-logo">
-        HOPE BPM
-    </div>
-
-    <p>
-        WHERE FAITH BREAKS REALITY
-    </p>
-
-    <span>
-        © 2026 HOPE BPM. ALL RIGHTS RESERVED.
-    </span>
-
-</footer>
-
-
-<script src="../js/main.js"></script>
-
-</body>
-
-</html>
+.section-text {
+
+    max-width: 520px;
+
+    color: #999;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 90px;
+
+    padding: 0 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 1000;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(5,5,5,0.85),
+            transparent
+        );
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-family: var(--brand-font);
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+
+    white-space: nowrap;
+
+}
+
+
+/* NAVIGATION */
+
+.main-nav {
+
+    display: flex;
+
+    gap: 38px;
+
+}
+
+.main-nav a {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 0.22em;
+
+    color: #888;
+
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 25px;
+
+    height: 1px;
+
+    background: white;
+
+    margin: 6px 0;
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background: #050505;
+
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.hero-visual {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: left center;
+
+    z-index: 0;
+
+    opacity: 0.95;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+.hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(5,5,5,0.05) 0%,
+            rgba(5,5,5,0.15) 35%,
+            rgba(5,5,5,0.82) 68%,
+            rgba(5,5,5,0.98) 100%
+        ),
+
+        radial-gradient(
+            ellipse at center,
+            transparent 20%,
+            rgba(0,0,0,0.75) 75%,
+            #050505 100%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    padding: 120px 20px 80px;
+
+}
+
+.eyebrow {
+
+    font-size: 10px;
+
+    letter-spacing: 0.35em;
+
+    color: #888;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   HERO WORDMARK
+   ========================================================= */
+
+.hero h1 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(70px, 13vw, 180px);
+
+    line-height: 0.95;
+
+    letter-spacing: 0.01em;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   HERO TAGLINE
+   ========================================================= */
+
+.tagline {
+
+    margin-top: 32px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(13px, 1.6vw, 19px);
+
+    letter-spacing: 0.38em;
+
+    font-weight: 400;
+
+}
+
+.hero-description {
+
+    margin: 30px auto 0;
+
+    max-width: 440px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 42px;
+
+}
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 28px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+.button-primary {
+
+    background: white;
+
+    color: black;
+
+}
+
+.button-primary:hover {
+
+    background: #dddddd;
+
+}
+
+.button-outline {
+
+    border: 1px solid #444;
+
+    color: white;
+
+}
+
+.button-outline:hover {
+
+    border-color: white;
+
+}
+
+
+/* =========================================================
+   HERO SCROLL
+   ========================================================= */
+
+.hero-scroll {
+
+    position: absolute;
+
+    bottom: 28px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 9px;
+
+    letter-spacing: 0.3em;
+
+    color: #555;
+
+    z-index: 4;
+
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.message-section {
+
+    background: #080808;
+
+}
+
+.message-section h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(48px, 8vw, 110px);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.05em;
+
+    font-weight: 500;
+
+}
+
+.message-section h2 span {
+
+    color: #555;
+
+}
+
+.message-line {
+
+    width: 100%;
+
+    max-width: 180px;
+
+    height: 1px;
+
+    background: #333;
+
+    margin: 45px 0;
+
+}
+
+.message-section h3 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(30px, 5vw, 65px);
+
+    font-weight: 400;
+
+    letter-spacing: -0.04em;
+
+}
+
+.message-section .section-text {
+
+    margin-top: 40px;
+
+}
+
+
+/* =========================================================
+   RELEASE
+   ========================================================= */
+
+.release-section {
+
+    background: #050505;
+
+}
+
+.release-grid {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+.release-artwork {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    background: #111;
+
+    overflow: hidden;
+
+}
+.release-cover {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+.artwork-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 40px;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(255,255,255,0.15),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 30% 80%,
+            rgba(255,255,255,0.06),
+            transparent 40%
+        ),
+
+        #101010;
+
+}
+
+.artwork-placeholder span {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    letter-spacing: -0.06em;
+
+    font-weight: 600;
+
+}
+
+.artwork-placeholder small {
+
+    margin-top: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.2em;
+
+    color: #888;
+
+}
+
+.release-number {
+
+    font-size: 10px;
+
+    letter-spacing: 0.2em;
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+.release-info h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+
+}
+
+.artist {
+
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    letter-spacing: 0.12em;
+
+    color: #777;
+
+}
+
+.release-description {
+
+    max-width: 430px;
+
+    margin-top: 35px;
+
+    color: #888;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+}
+
+.release-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    margin-top: 40px;
+
+}
+
+.text-link {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 0.18em;
+
+    color: #888;
+
+    transition: color 0.3s ease;
+
+}
+
+.text-link:hover {
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experience-section {
+
+    background: #080808;
+
+}
+
+.experience-section h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(60px, 9vw, 120px);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+
+}
+
+.experience-section h2 span {
+
+    color: #555;
+
+}
+
+.video-placeholder {
+
+    position: relative;
+
+    aspect-ratio: 16 / 9;
+
+    margin-top: 70px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.08),
+            transparent 25%
+        ),
+
+        #111;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+.video-placeholder iframe {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+}
+.video-placeholder::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            ellipse at center,
+            transparent 10%,
+            rgba(0,0,0,0.75)
+        );
+
+}
+
+.play-button {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 76px;
+
+    height: 76px;
+
+    border: 1px solid #666;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    padding-left: 3px;
+
+    transition: all 0.3s ease;
+
+}
+
+.video-placeholder:hover .play-button {
+
+    border-color: white;
+
+    transform: scale(1.08);
+
+}
+
+.video-placeholder p {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 30px;
+
+    z-index: 2;
+
+    font-size: 9px;
+
+    letter-spacing: 0.25em;
+
+    color: #888;
+
+}
+
+.experience-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-top: 30px;
+
+}
+
+.experience-footer p {
+
+    max-width: 400px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   STORY
+   ========================================================= */
+
+.story-section {
+
+    background: #050505;
+
+}
+
+.story-inner {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: end;
+
+}
+
+.story-section h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(50px, 7vw, 95px);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.06em;
+
+}
+
+.story-section .text-link {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+}
+
+
+/* =========================================================
+   CONNECT
+   ========================================================= */
+
+.connect-section {
+
+    background: #080808;
+
+    text-align: center;
+
+}
+
+.connect-inner {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.connect-section h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(60px, 9vw, 120px);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+
+}
+
+.connect-section h2 span {
+
+    color: #555;
+
+}
+
+.social-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 60px;
+
+}
+
+.social-links a {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 0.2em;
+
+    color: #777;
+
+    transition: color 0.3s ease;
+
+}
+
+.social-links a:hover {
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+
+    padding: 50px 24px;
+
+    border-top: 1px solid #161616;
+
+    text-align: center;
+
+    background: #050505;
+
+}
+
+.footer-logo {
+
+    font-family: var(--brand-font);
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    letter-spacing: 0.02em;
+
+}
+
+.site-footer p {
+
+    margin-top: 12px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.25em;
+
+    color: #555;
+
+}
+
+.site-footer span {
+
+    display: block;
+
+    margin-top: 30px;
+
+    font-size: 9px;
+
+    color: #444;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .site-header {
+
+        height: 75px;
+
+        padding: 0 20px;
+
+    }
+
+    .main-nav {
+
+        position: fixed;
+
+        top: 0;
+
+        right: 0;
+
+        width: 100%;
+
+        height: 100vh;
+
+        background: #050505;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 35px;
+
+        transform: translateX(100%);
+
+        transition: transform 0.4s ease;
+
+    }
+
+    .main-nav.open {
+
+        transform: translateX(0);
+
+    }
+
+    .main-nav a {
+
+        font-size: 14px;
+
+    }
+
+    .menu-toggle {
+
+        display: block;
+
+        position: relative;
+
+        z-index: 1100;
+
+    }
+
+    .hero {
+
+        min-height: 100svh;
+
+    }
+
+    .hero-visual {
+
+        object-position: 20% center;
+
+        opacity: 0.55;
+
+    }
+
+    .hero-background {
+
+        background:
+
+            linear-gradient(
+                180deg,
+                rgba(5,5,5,0.25) 0%,
+                rgba(5,5,5,0.65) 45%,
+                rgba(5,5,5,0.96) 82%,
+                #050505 100%
+            );
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(65px, 18vw, 120px);
+
+        letter-spacing: 0.01em;
+
+    }
+
+    .tagline {
+
+        font-size: 11px;
+
+        letter-spacing: 0.22em;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: min(260px, 100%);
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .button {
+
+        width: 100%;
+
+    }
+
+    .release-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+    .release-info h2 {
+
+        font-size: clamp(65px, 18vw, 100px);
+
+    }
+
+    .story-inner {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+    .experience-footer {
+
+        flex-direction: column;
+
+    }
+
+    .social-links {
+
+        flex-direction: column;
+
+        gap: 28px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
