@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -170,7 +171,7 @@
          RELEASE 01 — ONLY YOU
     ================================================== -->
 
-    <section class="release-section section">
+    <section class="release-section section release-compact">
 
         <div class="section-inner">
 
@@ -290,7 +291,7 @@
          RELEASE 02 — JERICHO FALL
     ================================================== -->
 
-    <section class="release-section section">
+    <section class="release-section section release-compact">
 
         <div class="section-inner">
 
@@ -471,8 +472,49 @@
 </footer>
 
 
+<!-- ==================================================
+     RELEASE SPACING
+================================================== -->
+
+<style>
+
+    /*
+       Tighter spacing between releases.
+       The first release keeps normal breathing room.
+       The second release starts much closer.
+    */
+
+    .release-compact {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+
+    .release-compact + .release-compact {
+        padding-top: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+
+        .release-compact {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+
+        .release-compact + .release-compact {
+            padding-top: 10px;
+        }
+
+    }
+
+</style>
+
+
 <script src="../js/main.js"></script>
 
 </body>
 
 </html>
+
