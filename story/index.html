@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -195,10 +196,6 @@
 
                 <div class="story-change-title">
 
-                    <p class="section-label">
-                        WHEN THE SOUND CHANGED
-                    </p>
-
                     <h2>
                         WHEN THE<br>
                         SOUND<br>
@@ -210,7 +207,7 @@
 
                 <div class="story-change-copy">
 
-                    <p class="story-large-text">
+                    <p class="story-large-text story-smaller-text">
 
                         Years of DJing and exposure to high
                         volumes eventually changed the way I
@@ -219,7 +216,7 @@
                     </p>
 
 
-                    <p class="section-text">
+                    <p class="section-text story-larger-text">
 
                         For someone who had spent so much of life
                         around music, it could have been the end
@@ -228,7 +225,7 @@
                     </p>
 
 
-                    <p class="story-highlight">
+                    <p class="story-highlight story-smaller-text">
 
                         But Jesus gave me the strength
                         to keep going.
@@ -236,7 +233,7 @@
                     </p>
 
 
-                    <p class="section-text story-secondary">
+                    <p class="section-text story-secondary story-larger-text">
 
                         And something else changed.
 
@@ -276,7 +273,7 @@
 
             <div class="story-faith-content">
 
-                <p class="section-label">
+                <p class="section-label story-section-heading">
                     FAITH
                 </p>
 
@@ -288,9 +285,6 @@
                     to keep going.”
 
                 </p>
-
-
-                <div class="story-quote-line"></div>
 
 
                 <p class="story-faith-body">
@@ -323,7 +317,7 @@
 
         <div class="section-inner">
 
-            <p class="section-label">
+            <p class="section-label story-section-heading">
                 A DIFFERENT PURPOSE
             </p>
 
@@ -374,7 +368,7 @@
 
         <div class="section-inner">
 
-            <p class="section-label">
+            <p class="section-label story-section-heading">
                 WHY HOPE BPM EXISTS
             </p>
 
@@ -417,7 +411,7 @@
 
                 <div class="vehicle-title">
 
-                    <p class="section-label">
+                    <p class="section-label story-section-heading">
                         THE VEHICLE
                     </p>
 
@@ -439,12 +433,16 @@
 
 
                     <p class="vehicle-line">
+
                         Reality can bend.
+
                     </p>
 
 
                     <p class="vehicle-line">
+
                         Faith can make the impossible possible.
+
                     </p>
 
 
@@ -487,7 +485,7 @@
 
         <div class="section-inner">
 
-            <p class="section-label">
+            <p class="section-label story-section-heading">
                 THE MESSAGE
             </p>
 
@@ -617,7 +615,7 @@
 
 .story-portrait-section {
     width:100%;
-    padding:0 0 100px;
+    padding:0 0 35px;
 }
 
 
@@ -641,8 +639,8 @@
 ================================================== */
 
 .story-change {
-    padding-top:100px;
-    padding-bottom:110px;
+    padding-top:45px;
+    padding-bottom:80px;
     background:#080808;
 }
 
@@ -661,12 +659,16 @@
     line-height:.85;
     letter-spacing:-.07em;
     font-weight:500;
-    margin-top:30px;
+    margin-top:0;
 }
 
 
+/* ==================================================
+   STORY TEXT SIZE ADJUSTMENTS
+================================================== */
+
 .story-change-copy {
-    padding-top:45px;
+    padding-top:25px;
 }
 
 
@@ -678,13 +680,27 @@
 }
 
 
+/* Smaller text requested */
+
+.story-smaller-text {
+    font-size:clamp(22px,2.8vw,36px);
+}
+
+
+/* Larger text requested */
+
+.story-larger-text {
+    font-size:clamp(29px,3.8vw,48px);
+}
+
+
 .story-change-copy .section-text {
-    margin-top:35px;
+    margin-top:25px;
 }
 
 
 .story-highlight {
-    margin-top:60px;
+    margin-top:45px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(30px,4vw,55px);
     line-height:1;
@@ -693,12 +709,25 @@
 
 
 .story-secondary {
-    margin-top:70px;
+    margin-top:50px;
 }
 
 
 .story-reason {
-    margin-top:30px;
+    margin-top:25px;
+}
+
+
+/* ==================================================
+   SECTION HEADINGS
+================================================== */
+
+.story-section-heading {
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(25px,3.2vw,40px);
+    line-height:1;
+    letter-spacing:-.04em;
+    font-weight:500;
 }
 
 
@@ -707,8 +736,8 @@
 ================================================== */
 
 .story-faith {
-    padding-top:130px;
-    padding-bottom:130px;
+    padding-top:70px;
+    padding-bottom:75px;
 }
 
 
@@ -724,21 +753,13 @@
     font-size:clamp(30px,4.5vw,60px);
     line-height:1.08;
     letter-spacing:-.045em;
-    margin:45px 0;
-}
-
-
-.story-quote-line {
-    width:1px;
-    height:70px;
-    background:#333;
-    margin:50px auto;
+    margin:35px 0 40px;
 }
 
 
 .story-faith-body {
     max-width:700px;
-    margin:40px auto 0;
+    margin:25px auto 0;
     font-size:clamp(19px,2vw,25px);
     line-height:1.5;
     color:#999;
@@ -750,8 +771,8 @@
 ================================================== */
 
 .story-purpose {
-    padding-top:120px;
-    padding-bottom:130px;
+    padding-top:75px;
+    padding-bottom:80px;
     background:#080808;
 }
 
@@ -760,7 +781,7 @@
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:40px;
-    margin-top:50px;
+    margin-top:40px;
 }
 
 
@@ -780,7 +801,7 @@
 
 .purpose-statement {
     max-width:800px;
-    margin-top:80px;
+    margin-top:55px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(28px,4vw,50px);
     line-height:1.08;
@@ -793,13 +814,13 @@
 ================================================== */
 
 .story-why {
-    padding-top:120px;
-    padding-bottom:130px;
+    padding-top:75px;
+    padding-bottom:80px;
 }
 
 
 .story-why h2 {
-    margin-top:35px;
+    margin-top:25px;
     max-width:1000px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(45px,7vw,100px);
@@ -811,7 +832,7 @@
 
 .story-why-text {
     max-width:750px;
-    margin-top:55px;
+    margin-top:40px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(25px,3.5vw,45px);
     line-height:1.15;
@@ -820,7 +841,7 @@
 
 
 .story-why-text + .story-why-text {
-    margin-top:30px;
+    margin-top:25px;
     color:#777;
 }
 
@@ -830,8 +851,8 @@
 ================================================== */
 
 .story-vehicle {
-    padding-top:110px;
-    padding-bottom:130px;
+    padding-top:75px;
+    padding-bottom:80px;
     background:#080808;
 }
 
@@ -849,12 +870,12 @@
     line-height:.85;
     letter-spacing:-.07em;
     font-weight:500;
-    margin-top:30px;
+    margin-top:25px;
 }
 
 
 .vehicle-copy {
-    padding-top:45px;
+    padding-top:25px;
 }
 
 
@@ -863,23 +884,23 @@
     font-size:clamp(28px,4vw,52px);
     line-height:1;
     letter-spacing:-.04em;
-    margin-top:55px;
+    margin-top:45px;
 }
 
 
 .vehicle-line + .vehicle-line {
-    margin-top:25px;
+    margin-top:20px;
     color:#777;
 }
 
 
 .vehicle-copy .section-text {
-    margin-top:65px;
+    margin-top:50px;
 }
 
 
 .vehicle-copy .story-large-text {
-    margin-top:40px;
+    margin-top:30px;
 }
 
 
@@ -888,13 +909,13 @@
 ================================================== */
 
 .story-message {
-    padding-top:140px;
-    padding-bottom:140px;
+    padding-top:80px;
+    padding-bottom:80px;
 }
 
 
 .story-message h2 {
-    margin-top:30px;
+    margin-top:25px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(55px,8vw,110px);
     line-height:.88;
@@ -912,7 +933,7 @@
     width:100%;
     height:1px;
     background:#252525;
-    margin:70px 0 55px;
+    margin:55px 0 45px;
 }
 
 
@@ -927,7 +948,7 @@
 
 .jesus-line {
     max-width:850px;
-    margin-top:65px;
+    margin-top:45px;
     font-family:'Space Grotesk',sans-serif;
     font-size:clamp(25px,3.5vw,45px);
     line-height:1.15;
@@ -940,8 +961,8 @@
 ================================================== */
 
 .story-final {
-    padding-top:110px;
-    padding-bottom:110px;
+    padding-top:75px;
+    padding-bottom:80px;
     background:#080808;
 }
 
@@ -965,7 +986,7 @@
     align-items:center;
     flex-wrap:wrap;
     gap:35px;
-    margin-top:60px;
+    margin-top:50px;
 }
 
 
@@ -983,7 +1004,7 @@
 
 
     .story-portrait-section {
-        padding-bottom:65px;
+        padding-bottom:25px;
     }
 
 
@@ -993,14 +1014,19 @@
 
 
     .story-change {
-        padding-top:75px;
-        padding-bottom:80px;
+        padding-top:35px;
+        padding-bottom:60px;
     }
 
 
     .story-change-grid {
         grid-template-columns:1fr;
-        gap:45px;
+        gap:35px;
+    }
+
+
+    .story-change-title h2 {
+        margin-top:0;
     }
 
 
@@ -1010,68 +1036,84 @@
 
 
     .story-highlight {
-        margin-top:45px;
+        margin-top:35px;
     }
 
 
     .story-secondary {
-        margin-top:55px;
+        margin-top:40px;
     }
 
 
     .story-faith {
-        padding-top:85px;
-        padding-bottom:85px;
+        padding-top:55px;
+        padding-bottom:60px;
+    }
+
+
+    .story-section-heading {
+        font-size:clamp(23px,6vw,32px);
     }
 
 
     .story-quote {
-        margin:35px 0;
+        margin:30px 0 30px;
     }
 
 
-    .story-quote-line {
-        margin:40px auto;
+    .story-faith-body {
+        margin-top:20px;
     }
 
 
     .story-purpose {
-        padding-top:80px;
-        padding-bottom:90px;
+        padding-top:55px;
+        padding-bottom:60px;
     }
 
 
     .purpose-grid {
         grid-template-columns:1fr;
-        gap:55px;
+        gap:45px;
+        margin-top:30px;
     }
 
 
     .purpose-statement {
-        margin-top:60px;
+        margin-top:45px;
     }
 
 
     .story-why {
-        padding-top:80px;
-        padding-bottom:90px;
+        padding-top:55px;
+        padding-bottom:60px;
+    }
+
+
+    .story-why h2 {
+        margin-top:20px;
     }
 
 
     .story-why-text {
-        margin-top:40px;
+        margin-top:30px;
     }
 
 
     .story-vehicle {
-        padding-top:80px;
-        padding-bottom:90px;
+        padding-top:55px;
+        padding-bottom:60px;
     }
 
 
     .vehicle-grid {
         grid-template-columns:1fr;
-        gap:45px;
+        gap:35px;
+    }
+
+
+    .vehicle-title h2 {
+        margin-top:20px;
     }
 
 
@@ -1081,39 +1123,44 @@
 
 
     .vehicle-line {
-        margin-top:45px;
+        margin-top:35px;
     }
 
 
     .vehicle-copy .section-text {
-        margin-top:50px;
+        margin-top:40px;
     }
 
 
     .story-message {
-        padding-top:90px;
-        padding-bottom:90px;
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
+    .story-message h2 {
+        margin-top:20px;
     }
 
 
     .message-divider {
-        margin:55px 0 45px;
+        margin:45px 0 35px;
     }
 
 
     .jesus-line {
-        margin-top:50px;
+        margin-top:35px;
     }
 
 
     .story-final {
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:60px;
+        padding-bottom:65px;
     }
 
 
     .story-final-links {
-        margin-top:45px;
+        margin-top:40px;
         flex-direction:column;
         align-items:flex-start;
     }
@@ -1128,3 +1175,4 @@
 </body>
 
 </html>
+```
