@@ -1362,49 +1362,80 @@ button {
 
     .story-mask-teaser {
         padding-top:60px;
-        padding-bottom:60px;
+        padding-bottom:65px;
     }
 
 
     .mask-teaser-grid {
+        display:grid;
         grid-template-columns:1fr;
         gap:40px;
     }
 
 
     .mask-teaser-image {
-        max-width:100%;
         width:100%;
+        max-width:100%;
     }
 
 
     .mask-teaser-copy {
+        width:100%;
         max-width:100%;
     }
 
 
-    /* WHY THE MASK? — BIGGER + WHITE */
+    /* ==============================================
+       WHY THE MASK?
+       MOBILE — LARGE + WHITE
+    ============================================== */
 
-    .mask-teaser-copy .story-section-heading {
-        font-size:clamp(42px,11vw,58px);
-        line-height:.95;
-        letter-spacing:-.055em;
-        color:#fff;
+    .mask-teaser-copy .story-section-heading,
+    .mask-teaser-copy h2.story-section-heading {
+        display:block !important;
+        width:100% !important;
+
+        font-family:'Space Grotesk',sans-serif !important;
+        font-size:56px !important;
+        line-height:.92 !important;
+        letter-spacing:-.06em !important;
+        font-weight:500 !important;
+
+        color:#fff !important;
+        opacity:1 !important;
     }
 
+
+    /* ==============================================
+       INTRO
+    ============================================== */
 
     .mask-teaser-intro {
         margin-top:25px;
-        font-size:clamp(26px,7vw,38px);
+        font-size:30px;
+        line-height:1.05;
+        color:#777;
     }
 
 
-    /* READ THE STORY — BIGGER */
+    /* ==============================================
+       READ THE STORY
+       MOBILE — LARGE
+    ============================================== */
 
-    .mask-teaser-copy .text-link {
-        margin-top:35px;
-        font-size:clamp(24px,6.5vw,32px);
-        line-height:1;
+    .mask-teaser-copy .text-link,
+    .mask-teaser-copy a.text-link {
+        display:inline-block !important;
+
+        margin-top:38px !important;
+
+        font-family:'Space Grotesk',sans-serif !important;
+        font-size:30px !important;
+        line-height:1 !important;
+        font-weight:500 !important;
+
+        color:#fff !important;
+        opacity:1 !important;
     }
 
 }
