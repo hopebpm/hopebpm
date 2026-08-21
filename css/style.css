@@ -1292,3 +1292,97 @@ button {
     }
 
 }
+
+/* ==================================================
+   WHY THE MASK TEASER
+================================================== */
+
+.story-mask-teaser {
+    padding-top:80px;
+    padding-bottom:80px;
+    background:#080808;
+}
+
+
+.mask-teaser-grid {
+    display:grid;
+    grid-template-columns:minmax(280px, 420px) 1fr;
+    gap:clamp(50px,9vw,140px);
+    align-items:center;
+}
+
+
+.mask-teaser-image {
+    width:100%;
+    max-width:420px;
+    overflow:hidden;
+}
+
+
+.mask-teaser-image img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+
+.mask-teaser-copy {
+    max-width:650px;
+}
+
+
+.mask-teaser-intro {
+    margin-top:30px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(28px,4vw,52px);
+    line-height:1.05;
+    letter-spacing:-.04em;
+    color:#777;
+}
+
+
+.mask-teaser-link {
+    display:inline-block;
+    margin-top:40px;
+}
+
+
+/* ==================================================
+   WHY THE MASK — MOBILE
+================================================== */
+
+@media (max-width:768px) {
+
+    .story-mask-teaser {
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
+    .mask-teaser-grid {
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+
+    .mask-teaser-image {
+        max-width:100%;
+        width:100%;
+    }
+
+
+    .mask-teaser-copy {
+        max-width:100%;
+    }
+
+
+    .mask-teaser-intro {
+        margin-top:25px;
+    }
+
+
+    .mask-teaser-link {
+        margin-top:30px;
+    }
+
+}
