@@ -1306,7 +1306,7 @@ button {
 
 .mask-teaser-grid {
     display:grid;
-    grid-template-columns:minmax(280px, 420px) 1fr;
+    grid-template-columns:minmax(280px,420px) 1fr;
     gap:clamp(50px,9vw,140px);
     align-items:center;
 }
@@ -1331,6 +1331,12 @@ button {
 }
 
 
+.mask-teaser-copy .story-section-heading {
+    font-size:clamp(32px,4.5vw,55px);
+    color:#fff;
+}
+
+
 .mask-teaser-intro {
     margin-top:30px;
     font-family:'Space Grotesk',sans-serif;
@@ -1341,9 +1347,10 @@ button {
 }
 
 
-.mask-teaser-link {
+.mask-teaser-copy .text-link {
     display:inline-block;
     margin-top:40px;
+    font-size:clamp(18px,2vw,24px);
 }
 
 
@@ -1376,13 +1383,19 @@ button {
     }
 
 
+    .mask-teaser-copy .story-section-heading {
+        font-size:clamp(30px,8vw,40px);
+    }
+
+
     .mask-teaser-intro {
         margin-top:25px;
     }
 
 
-    .mask-teaser-link {
+    .mask-teaser-copy .text-link {
         margin-top:30px;
+        font-size:20px;
     }
 
 }
