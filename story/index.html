@@ -1187,7 +1187,6 @@
     letter-spacing:-.035em;
 }
 
-
 /* ==================================================
    WHY THE MASK
 ================================================== */
@@ -1237,6 +1236,71 @@
 
 
 .mask-teaser-copy .text-link {
+    display:inline-block;
+    margin-top:40px;
+}
+
+
+/* ==================================================
+   THE WORLD BEHIND HOPE BPM
+================================================== */
+
+.story-world-teaser {
+    padding-top:80px;
+    padding-bottom:80px;
+    background:#080808;
+}
+
+
+.world-teaser-grid {
+    display:grid;
+    grid-template-columns:minmax(280px,420px) 1fr;
+    gap:clamp(50px,9vw,140px);
+    align-items:center;
+}
+
+
+.world-teaser-image {
+    width:100%;
+    max-width:420px;
+    overflow:hidden;
+}
+
+
+.world-teaser-image img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+
+.world-teaser-copy {
+    max-width:650px;
+}
+
+
+.world-teaser-copy h2 {
+    margin:0;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(45px,6vw,85px);
+    line-height:.88;
+    letter-spacing:-.065em;
+    font-weight:500;
+    color:#fff;
+}
+
+
+.world-teaser-intro {
+    margin-top:30px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(28px,4vw,52px);
+    line-height:1.05;
+    letter-spacing:-.04em;
+    color:#777;
+}
+
+
+.world-teaser-copy .text-link {
     display:inline-block;
     margin-top:40px;
 }
@@ -1497,6 +1561,78 @@
     }
 
 
+    /* ==================================================
+       THE WORLD BEHIND HOPE BPM — MOBILE
+    ================================================== */
+
+    .story-world-teaser {
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
+    .world-teaser-grid {
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+
+    .world-teaser-image {
+        max-width:100%;
+        width:100%;
+    }
+
+
+    .world-teaser-copy {
+        max-width:100%;
+    }
+
+
+    .world-teaser-copy h2 {
+        display:block !important;
+        width:100% !important;
+
+        font-family:'Space Grotesk',sans-serif !important;
+        font-size:56px !important;
+        line-height:.92 !important;
+        letter-spacing:-.06em !important;
+        font-weight:500 !important;
+
+        color:#fff !important;
+        opacity:1 !important;
+    }
+
+
+    .world-teaser-intro {
+        margin-top:25px !important;
+        font-family:'Space Grotesk',sans-serif !important;
+        font-size:30px !important;
+        line-height:1.05 !important;
+        letter-spacing:-.04em !important;
+        color:#777 !important;
+    }
+
+
+    .world-teaser-copy .text-link,
+    .world-teaser-copy a.text-link {
+        display:inline-block !important;
+
+        margin-top:32px !important;
+
+        font-family:'Space Grotesk',sans-serif !important;
+        font-size:24px !important;
+        line-height:1 !important;
+        font-weight:500 !important;
+
+        color:#fff !important;
+        opacity:1 !important;
+    }
+
+
+    /* ==================================================
+       FINAL — MOBILE
+    ================================================== */
+
     .story-final {
         padding-top:60px;
         padding-bottom:65px;
@@ -1517,48 +1653,5 @@
 <script src="../js/main.js"></script>
 
 </body>
-<!-- ==================================================
-     THE WORLD BEHIND HOPE BPM
-================================================== -->
 
-<section class="story-world-teaser">
-
-    <div class="world-teaser-grid">
-
-        <div class="world-teaser-image">
-
-            <img
-                src="../assets/world-hopebpm.webp"
-                alt="The world behind HOPE BPM"
-                loading="lazy"
-            >
-
-        </div>
-
-
-        <div class="world-teaser-copy">
-
-            <h2>
-                THE WORLD<br>
-                BEHIND HOPE BPM
-            </h2>
-
-
-            <p class="world-teaser-intro">
-                There’s more to what you see.
-            </p>
-
-
-            <a
-                href="/story/world-behind-hope-bpm/"
-                class="text-link"
-            >
-                READ THE STORY →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
 </html>
