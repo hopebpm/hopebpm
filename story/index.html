@@ -666,7 +666,7 @@
 
                     <a
                         href="/story/why-the-mask/"
-                        class="text-link"
+                        class="text-link story-teaser-link"
                     >
                         READ THE STORY →
                     </a>
@@ -703,7 +703,7 @@
 
                 <div class="world-teaser-copy">
 
-                    <p class="section-label story-section-heading">
+                    <p class="section-label story-section-heading world-section-heading">
                         THE WORLD BEHIND HOPE BPM
                     </p>
 
@@ -715,7 +715,7 @@
 
                     <a
                         href="/story/world-behind-hope-bpm/"
-                        class="text-link"
+                        class="text-link story-teaser-link"
                     >
                         READ THE STORY →
                     </a>
@@ -1329,16 +1329,11 @@
 }
 
 
-/* ==================================================
-   THE WORLD BEHIND HOPE BPM — HEADING
-   NEW OVERRIDE ONLY
-================================================== */
-
-.world-teaser-copy .story-section-heading {
+.world-section-heading {
     font-family:'Space Grotesk',sans-serif;
-    font-size:clamp(25px,3.2vw,40px);
-    line-height:1;
-    letter-spacing:-.04em;
+    font-size:clamp(32px,4.8vw,58px);
+    line-height:.95;
+    letter-spacing:-.055em;
     font-weight:500;
     color:#fff;
 }
@@ -1354,22 +1349,22 @@
 }
 
 
-.world-teaser-copy .text-link {
+.story-teaser-link {
     display:inline-block;
     margin-top:40px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(18px,2vw,24px);
+    line-height:1;
+    letter-spacing:-.025em;
+    font-weight:400;
+    color:#777;
+    text-decoration:none;
+    transition:color .25s ease;
 }
 
 
-/* ==================================================
-   THE WORLD BEHIND HOPE BPM — READ THE STORY
-   NEW OVERRIDE ONLY
-================================================== */
-
-.world-teaser-copy .text-link {
-    font-family:'Space Grotesk',sans-serif;
-    font-size:clamp(20px,2.4vw,30px);
-    line-height:1;
-    letter-spacing:-.025em;
+.story-teaser-link:hover {
+    color:#fff;
 }
 
 
@@ -1655,14 +1650,10 @@
     }
 
 
-    /* ==================================================
-       THE WORLD BEHIND HOPE BPM — MOBILE HEADING
-       NEW OVERRIDE ONLY
-    ================================================== */
-
-    .world-teaser-copy .story-section-heading {
-        font-size:clamp(23px,6vw,32px);
-        line-height:1;
+    .world-section-heading {
+        font-size:clamp(30px,8vw,42px);
+        line-height:.95;
+        letter-spacing:-.055em;
         color:#fff;
     }
 
@@ -1672,14 +1663,8 @@
     }
 
 
-    /* ==================================================
-       THE WORLD BEHIND HOPE BPM — MOBILE READ THE STORY
-       NEW OVERRIDE ONLY
-    ================================================== */
-
-    .world-teaser-copy .text-link {
+    .world-teaser-copy .story-teaser-link {
         margin-top:30px;
-        font-size:clamp(20px,5vw,28px);
     }
 
 
